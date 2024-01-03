@@ -1,7 +1,14 @@
 package util
 
 import model.PlayerData
-
+/**
+ * EntryMapping is for converting player data to a map that will be used in creating scoreboard.
+ *
+ * @param playerData List of PlayerData.
+ * @return Map of field name and list of values for that field.
+ * For example, "Kills" to listOf(12,14,15,14 ...).
+ * this entry holds kills for each player provided.
+ */
 fun entryMapper(playerData: List<PlayerData>): Map<String, List<String>> {
     val entryValues = mapOf(
         "#" to (1..playerData.size).map { it.toString() },

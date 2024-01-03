@@ -12,6 +12,12 @@ fun parseMatchData(json: String): MatchData? {
     return gson.fromJson(json, MatchData::class.java)
 }
 
+/**
+ * parseMatchDataFromDirectory parses all json files containing match data in given path.
+ *
+ * @param directoryPath path containing all json files.
+ * @return list of MatchData.
+ */
 fun parseMatchDataFromDirectory(directoryPath: String): List<MatchData> {
     val directory = File(directoryPath)
     val matchDataList = mutableListOf<MatchData>()

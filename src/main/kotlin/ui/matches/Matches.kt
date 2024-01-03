@@ -14,6 +14,11 @@ import ui.elements.match_list.MatchList
 import ui.elements.table.MatchTable
 import util.parseMatchDataFromDirectory
 
+/**
+ * MatchScreen is screen for viewing all match history.
+ *
+ * @param steamId steamID of the user.
+ */
 @Composable
 fun MatchesScreen(steamId: Long) {
     var state by mutableStateOf(MatchesState())

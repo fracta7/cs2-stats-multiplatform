@@ -14,6 +14,12 @@ import ui.matches.sampleMatchData
 import ui.theme.AppTheme
 import util.entryMapper
 
+/**
+ * MatchTable is composable function for displaying match data as scoreboard.
+ *
+ * @param matchData match data.
+ * @param modifier Modifiers for Compose
+ */
 @Composable
 fun MatchTable(modifier: Modifier = Modifier, matchData: MatchData) {
 

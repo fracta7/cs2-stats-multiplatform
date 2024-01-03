@@ -14,6 +14,12 @@ import androidx.compose.ui.unit.sp
 import model.MatchData
 import util.calculateMatchScore
 
+/**
+ * MatchList is composable that displays single match.
+ *
+ * @param matchData match data.
+ * @param userSteamID steamID of the user
+ */
 @Composable
 fun MatchList(matchData: MatchData, userSteamID: Long) {
     val matchScore = calculateMatchScore(matchData = matchData, userSteamId = userSteamID)
