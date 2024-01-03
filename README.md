@@ -31,7 +31,7 @@ By default, it reads files from "matches/" folder containing .json files feel fr
                 "four_k_rounds": "0",
                 "three_k_rounds": "1"
             },
-            {...}
+            //and info on other players
                 ]
 }
 ```
