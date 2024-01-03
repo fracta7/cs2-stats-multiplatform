@@ -35,6 +35,7 @@ By default, it reads files from "matches/" folder containing .json files feel fr
                 ]
 }
 ```
+*numbers have been turned to a `string` because sometimes the values won't turn to `int`, please adjust your code accordingly!*
 
 ## Where to get this data?
 First option is to use third party applications for parsing demo files into `.json` data. My go-to library is written in `rust` and can be used in Python, JavaScript and WebAssembly (`demoparser2`). Link: https://github.com/LaihoE/demoparser
@@ -43,10 +44,10 @@ In repository, I have provided sample python script using the library `demoparse
 
 *usage:*
 ```terminal
-python parseDemo.py <link-to-demo.dem.bz2>
+python parse_demo.py <link-to-demo.dem.bz2>
 ```
 
-it will output to `match_data.json` incrementing the file name if it already exists.
+it will output to `match_data.json` incrementing the file name if it already exists. Note that it accepts links that contains demo file with `dem.bz2` file format, feel free to adjust the script.
 
 ## Supported platforms
 
