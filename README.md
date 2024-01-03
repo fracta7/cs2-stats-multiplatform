@@ -53,6 +53,4 @@ it will output to `match_data.json` incrementing the file name if it already exi
 
 -PC (Windows, Linux)
 
--Android
-
 *support for other platforms will come soon*
