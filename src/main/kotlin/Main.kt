@@ -42,23 +42,25 @@ fun App() {
             AlertDialog(
                 onDismissRequest = { exitProcess(0) },
             ) {
-                Column {
-                    Text("Please enter your steam ID below. Dismissing will close the application")
-                    var steamIdInput by remember { mutableStateOf("") }
-                    TextField(
-                        steamIdInput,
-                        onValueChange = { steamIdInput = it },
-                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-                        singleLine = true,
-                        label = { Text("steamID") },
-                        shape = ShapeDefaults.Large
-                    )
-                    Button(onClick = {
-                        writeTextToFile(filePath = "user_id", content = steamIdInput)
-                        steamId = steamIdInput.toLong()
-                        openDialog.value = false
-                    }){
-                        Text("Save")
+                Surface {
+                    Column {
+                        Text("Please enter your steam ID below. Dismissing will close the application")
+                        var steamIdInput by remember { mutableStateOf("") }
+                        TextField(
+                            steamIdInput,
+                            onValueChange = { steamIdInput = it },
+                            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                            singleLine = true,
+                            label = { Text("steamID") },
+                            shape = ShapeDefaults.Large
+                        )
+                        Button(onClick = {
+                            writeTextToFile(filePath = "user_id", content = steamIdInput)
+                            steamId = steamIdInput.toLong()
+                            openDialog.value = false
+                        }){
+                            Text("Save")
+                        }
                     }
                 }
             }
