@@ -4,7 +4,7 @@ Multiplatform application for tracking game stats for CS2, kills, deaths, damage
 
 By default it reads files from "matches/" folder containing .json files feel free to change the source for receiving the data
 
-## Supported platform
+## Supported platforms
 
 -PC (Windows, Linux)
 
