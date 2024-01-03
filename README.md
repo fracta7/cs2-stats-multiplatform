@@ -2,7 +2,7 @@
 
 Multiplatform application for tracking game stats for CS2, kills, deaths, damage and etc.
 
-By default, it reads files from "matches/" folder containing .json files feel free to change the source for receiving the data
+By default, it reads files from `"matches/"` folder containing `.json` files feel free to change the source for receiving the data
 
 ## JSON Structure
 ```JSON
